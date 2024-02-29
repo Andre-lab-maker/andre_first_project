@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazing APP creator by André Diegues</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="backoffice-section">
+    <h1>Welcome to the Amazing App Creator</h1>
+    <h4 style="margin-top: -20px; right: 20px;">by André Diegues</h4>
+
+    <section class="app-section">
+      <h2 style="text-align: center;">APP</h2>
+      <div class="header-setting">
+        <h3>Set the HEADER:</h3>
+        <div class="input-container">
+          <input id="field_headerText" type="text" placeholder="Enter header text here" class="header-input">
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+
+
+      <section class="carousel-section">
+        <h2 style="text-align: center;">Carousel</h2>
+        <div class="carousel-setting">
+          <h3>Set the carousel name:</h3>
+          <div class="input-container">
+            <input id="field_carouselName" type="text" placeholder="Enter carousel name here"
+              class="carousel-name-input">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+
+
+
+        <div class="image-upload">
+          <h3>Upload multiple images for the carousel:</h3>
+          <div class="file-drop-area">
+            <span class="file-msg">Drag or drop files here</span>
+            <input id="field_carouselImage" type="file" multiple class="file-input">
+          </div>
+          
+          <button id="submitImages" class="submit-btn">Submit</button>
+          <button class="delete-btn">Delete</button>
+        </div>
+
+  </div>
+  </section>
+
+  <section class="wrapped-texts-section" style="display: inline-block;">
+    <h2 style="text-align: center;">Wrapped Texts</h2>
+    <div>
+      <h2>Set the Wrapped text title: </h2>
+      <div class="input-container">
+        <input id="field_wrappedTexts" type="text" placeholder="Enter wrapped text here" class="wrapped-input">
+
+        <button type="submit">Submit</button>
+      </div>
+    </div>
+
+
+    <div class="left-image" style="float: left; width: 40%;">
+      <h3 style="text-align: left;">UPLOAD THE LEFT IMAGE:</h3>
+      <div class="file-drop-area" style="width: 120px;">
+        <span class="file-msg">Drag or drop files here</span>
+        <input id="main_first_image" type="file" class="file-input" style="width: 120px;">
+      </div>
+      
+      <button id="submitImages2" class="submit-btn" style="margin-right: 225px;">Submit</button>
+      <button class="delete-btn">Delete</button>
+    </div>
+
+    <div class="wrapped-texts-write1" style="float: left; width: 60%;">
+      <h5 style="width: 80%;">WRITE THE TEXT TO BE WRAPPED AROUND THE LEFT IMAGE:</h5>
+      <textarea id="backoffice_first_paragraph" class="text-area" rows="8" style="width: 70%;"></textarea>
+      <button type="submit">Submit</button>
+    </div>
+
+    <div style="clear:both;"></div> <!-- Clear float -->
+
+    <div class="right-image" style="float: left; width: 40%;">
+      <h3 style="text-align: left;">UPLOAD THE RIGHT IMAGE:</h3>
+      <div class="file-drop-area" style="width: 120px;">
+        <span class="file-msg">Drag or drop files here</span>
+        <input type="file" class="file-input" style="width: 120px;">
+      </div>
+      
+      <button id="submitImages3" class="submit-btn" style="margin-right: 225px;">Submit</button>
+      <button class="delete-btn">Delete</button>
+    </div>
+
+    <div class="wrapped-texts-write2" style="float: left; width: 60%;">
+      <h5 id="wrapped-texts-write2" style="text-align: left; width: 80%;">WRITE THE TEXT TO BE WRAPPED AROUND THE RIGHT
+        IMAGE:</h5>
+      <textarea id="backoffice_second_paragraph" class="text-area" rows="8" style="width: 70%;"></textarea>
+      <button type="submit">Submit</button>
+    </div>
+  </section>
+  </div>
+
+  <script src="/desafio/BACKOFFICE/script.js"></script>
+</body>
+
+</html>

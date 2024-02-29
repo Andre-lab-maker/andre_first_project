@@ -1,0 +1,72 @@
+body{
+    margin: auto;
+    width: 960px;
+
+}
+.backoffice-section {
+    margin-top: 40px;
+  }
+  
+  .app-section, .carousel-section, .wrapped-texts-section {
+    margin-top: 40px;
+  }
+  
+  .input-container {
+    margin-top: 40px;
+    width: 200px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .file-drop-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin-top: 10px;
+    position: relative;
+    height: 60px;
+  }
+  
+  .file-msg {
+    display: block;
+    text-align: center;
+  }
+  
+  .file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  
+  .uploaded-images {
+    margin-top: 10px;
+  }
+  
+  .delete-btn {
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .thumbnail-container, .left-image, .right-image {
+    margin-top: 30px;
+    text-align: right;
+  }
+  
+  .thumbnail-container img, .left-image img, .right-image img {
+    height: 60px;
+    width: auto;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .text-area {
+    width: 70%;
+    margin-top: 10px;
+    resize: vertical;
+  }
+  
