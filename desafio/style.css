@@ -100,7 +100,7 @@ h3 {
 .carousel__button--prev::after,
 .carousel__button--next::after {
   content: " ";
-  position: absolute;
+  position: relative;
   width: 10px;
   height: 10px;
   top: 50%;

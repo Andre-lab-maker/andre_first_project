@@ -15,11 +15,12 @@
 
     <section class="app-section">
       <h2 style="text-align: center;">APP</h2>
+      
       <div class="header-setting">
         <h3>Set the HEADER:</h3>
         <div class="input-container">
           <input id="field_headerText" type="text" placeholder="Enter header text here" class="header-input">
-          <button type="submit">Submit</button>
+          <button id="submitHeader" type="submit">Submit</button>
         </div>
       </div>
 
@@ -35,20 +36,32 @@
           </div>
         </div>
 
-
+        <div id="imageModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img class="full-image" id="modalImage">
+          </div>
+        </div>
 
         <div class="image-upload">
-          <h3>Upload multiple images for the carousel:</h3>
+          <h3>Upload an image for the carousel:</h3>
           <div class="file-drop-area">
-            <span class="file-msg">Drag or drop files here</span>
-            <input id="field_carouselImage" type="file" multiple class="file-input">
+            <span class="file-msg">Drag or drop a file here</span>
+            <input id="field_carouselImage" type="file" accept="image/*" class="file-input">
           </div>
-          <div>
-            <h6 style="top: 10px; bottom: 10px;">Uploaded Images</h6>
+          <div class="button-container">
+            <button class="delete-btn">X</button>
+            <h4 class="uploaded-images">Uploaded Image: </h4>
+            <div id="thumbnails-container"></div><!-- Container for thumbnails -->
           </div>
           <button id="submitImages" class="submit-btn">Submit</button>
-          <button class="delete-btn">X</button>
+
+          <p> *O tamanho máximo de uma imagem em thumbnail é de 300kb, o máximo é 15 thumbnails.</p>
         </div>
+
+        
+
+      
 
   </div>
   </section>
@@ -71,10 +84,14 @@
         <span class="file-msg">Drag or drop files here</span>
         <input id="main_first_image" type="file" class="file-input" style="width: 120px;">
       </div>
-      
-      <button id="submitImages2" class="submit-btn" style="margin-right: 225px;">Submit</button>
+      <div>
+        <!-- Adicionar o elemento img para exibir a imagem do thumbnail -->
+        <div id="leftThumbnail" src="" alt="" style="width: 35px; height: 35px; margin-right: 225px;"></div>
+      </div>
+      <button id="submitImages2" class="submit-btn" style="margin-right: 230px;">Submit</button>
       <button class="delete-btn">X</button>
     </div>
+
 
     <div class="wrapped-texts-write1" style="float: left; width: 60%;">
       <h5 style="width: 80%;">WRITE THE TEXT TO BE WRAPPED AROUND THE LEFT IMAGE:</h5>
@@ -88,9 +105,12 @@
       <h3 style="text-align: left;">UPLOAD THE RIGHT IMAGE:</h3>
       <div class="file-drop-area" style="width: 120px;">
         <span class="file-msg">Drag or drop files here</span>
-        <input type="file" class="file-input" style="width: 120px;">
+        <input id="main_second_image" type="file" class="file-input" style="width: 120px;">
       </div>
-      
+      <div>
+        <!-- Adicionar a div para exibir o thumbnail -->
+        <div id="rightThumbnail" class="thumbnail" style="width: 35px; height: 35px; margin-right: 225px;"></div>
+      </div>
       <button id="submitImages3" class="submit-btn" style="margin-right: 225px;">Submit</button>
       <button class="delete-btn">X</button>
     </div>
@@ -104,7 +124,7 @@
   </section>
   </div>
 
-  <script src="/desafio/BACKOFFICE/script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
